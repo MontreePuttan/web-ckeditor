@@ -1,0 +1,28 @@
+Must have folder
+1.ckeditor
+url - 
+2.kcfinder
+url - 
+
+Config
+Step 01
+add message in path ckeditor/config.js
+
+
+   config.filebrowserBrowseUrl = '/folder-porject/kcfinder/browse.php?opener=ckeditor&type=files';
+   config.filebrowserImageBrowseUrl = '/folder-porject/kcfinder/browse.php?opener=ckeditor&type=images';
+   config.filebrowserFlashBrowseUrl = '/folder-porject/kcfinder/browse.php?opener=ckeditor&type=flash';
+   config.filebrowserUploadUrl = '/folder-porject/kcfinder/upload.php?opener=ckeditor&type=files';
+   config.filebrowserImageUploadUrl = '/folder-porject/kcfinder/upload.php?opener=ckeditor&type=images';
+   config.filebrowserFlashUploadUrl = '/folder-porject/kcfinder/upload.php?opener=ckeditor&type=flash';
+
+Step 02
+change message in path kcfinder/conf/config.php
+
+
+'disabled' => false,
+'uploadURL' => "/folder-porject/upload",
+
+
+Step 03
+create folder 'upload' in root project
